@@ -19,7 +19,8 @@ public class SoftwareTest {
 		StringBuilder sb = new StringBuilder();
 		int startIndex = (int) Math.floor(Math.random() * 11);
 		int spaceIndex = (startIndex + 5)/2;
-		int jumpval = (int) Math.floor(Math.random() * 11);
+		int jumpval = 1 + (int) Math.floor(Math.random() * 10);
+		jumpval++;
 		int currIndex = startIndex;
 		for(int i = 0; i < 11; i++) {
 			sb.append("NOAHSPECTOR".charAt(currIndex));
