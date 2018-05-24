@@ -18,11 +18,13 @@ public class SoftwareTest {
 	public static String getNoahsName() {
 		StringBuilder sb = new StringBuilder();
 		int startIndex = (int) Math.floor(Math.random() * 11);
+		int spaceIndex = (startIndex + 5)/2;
 		int jumpval = (int) Math.floor(Math.random() * 11);
 		int currIndex = startIndex;
 		for(int i = 0; i < 11; i++) {
-			sb.append("NOAH SPECTO".charAt(currIndex));
+			sb.append("NOAHSPECTOR".charAt(currIndex));
 			currIndex = (currIndex + jumpval)%11;
+			if(i == spaceIndex) sb.append(" ");
 		}
 		return sb.toString();
 	}
